@@ -51,7 +51,7 @@ Research
 ## 🔬 Research Experience
 ### Current Research
 **The Establishment of Korean medicine Clinical Practice Guideline(KMCPG) and Critical Pathway(CP)for Attention Deficit Hyperactivity Disorder (ADHD)**<br>
--  Principal investigator | Korea Health Industry Development Institute | 2023 - 2024<br>
+-  Principal investigator | Korea Health Industry Development Institute | 2023 - 2025<br>
 
 **Development of head meridian activity measuring device**<br>
 - Principal investigator | Korea Health Industry Development Institute | 2023 - 2027 <br>
@@ -66,11 +66,17 @@ Research
 - Principal investigator | National Research Foundation of Korea | 2020 - 2023 <br>
 
 ## 🏆 Awards and Honors
+### Academic Awards
+- 2024 |  **Best Poster Communication, 16th European Congress for Integrative Medicine**, European Society of Integrative Medicine 
 - 2023 |  **Integrative Talent Award in Korean Medicine**, The Association of Women Korean Medical Doctor, Korea 
 - 2020 |  **First Prize, Kyung Hee University Best Dissertation Award (Medical science)**, Kyung Hee University, Korea 
 - 2017 |  **Second Place, 22nd Resident Best Paper Award**, Kyung Hee Medical Center, Korea 
 - 2016 |  **First Place, 21st Resident Best Paper Award**, Kyung Hee Medical Center, Korea 
 - 2013 |  **Young Hur Jun Award (Talent Award)**, College of Korean Medicine, Kyung Hee University, Korea 
+
+### Professional Awards
+- 2024 |  **Outstanding Staff Award of the Year**, Kyung Hee Medical Center, Korea
+- 2022 |  **Most Courteous Employee**, Kyung Hee Medical Center, Korea
 
 ## 🎤 Public Speaking
 
