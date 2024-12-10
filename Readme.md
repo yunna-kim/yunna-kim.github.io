@@ -128,6 +128,8 @@ Research
 - Cho, SH., Lee, HY., Kwon, Y., Kim, Y. (2016). Pharmaceutical composition for preventing or treating neurodegerative disorder comprising an extract of Sophora japonica L.<br>US – Application No. 16/328194
 
 ## Conference Presentations
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1JE6yFnLMgMmBNYmLFtUVs3oSRjKM82Y&ehbc=2E312F" width="640" height="480"></iframe>
+
 ### Oral Presentations
 - Kim, Y., Lee, H.-Y., Choi, Y.-J., Cho, S.-H. (2019). Antidepressant effects of ginsenoside Rf on behavioral change in the glial degeneration model of depression by reversing glial loss. The Korean Society of Ginseng (2019 Autumn Ginseng Jeju Conference), Jeju, Korea
 
