@@ -67,6 +67,8 @@ Research
 
 ## 🏆 Awards and Honors
 ### Academic Awards
+- 2024 |  **Most Prolific Author Award**, Kyung Hee Medical Center, Korea 
+- 2024 |  **Outstanding Paper Award - Q4**, Kyung Hee Medical Center, Korea 
 - 2024 |  **Best Poster Communication, 16th European Congress for Integrative Medicine**, European Society of Integrative Medicine 
 - 2023 |  **Integrative Talent Award in Korean Medicine**, The Association of Women Korean Medical Doctor, Korea 
 - 2020 |  **First Prize, Kyung Hee University Best Dissertation Award (Medical science)**, Kyung Hee University, Korea 
@@ -80,9 +82,10 @@ Research
 
 ## 🎤 Public Speaking
 ### TV & Radio
-- [출근길 인터뷰] 코 앞으로 다가온 수능…수험생 건강 전략은? ([Commute Interview] College Entrance Exam Approaching...What's the Health Strategy for Test Takers?) [YouTube](https://youtu.be/HDObrgjXjUU?feature=shared) / 연합뉴스TV (YonhapnewsTV) / 2024. 11. 8.
-- 생방송 충청은 지금 (톡톡 정보) (Chungcheong Now Live (Info Talk)) [YouTube](https://www.youtube.com/live/jAyWg-8l7C0?feature=shared) / KBS충주 (KBS Chungju) / 2024. 8. 15.
-- 학부모도 수험생!...마음의 상처 관리 필요 (Parents are Test Takers Too!...Mental Health Care Needed) [YouTube](https://youtu.be/H8z_-NZe2iU?feature=shared) / YTN / 2019. 8. 7.
+- TBS eFM / Morning Groove / [에듀톡] 경희대한방병원 김윤나 교수님 편 ([EDU Talk] Episode. Kyung Hee University Korean Medicine Hospital Prof. Yunna Kim) / [Web](https://tbs.seoul.kr/cont/eFM/morning_groove/playlist/playlist.do?programId=PG2061752E) / 2024.12.4
+- 연합뉴스TV (YonhapnewsTV) / [출근길 인터뷰] 코 앞으로 다가온 수능…수험생 건강 전략은? ([Commute Interview] College Entrance Exam Approaching...What's the Health Strategy for Test Takers?) [YouTube](https://youtu.be/HDObrgjXjUU?feature=shared) / 2024.11.8.
+- KBS충주 (KBS Chungju) / 생방송 충청은 지금 (톡톡 정보) (Chungcheong Now Live (Info Talk)) [YouTube](https://www.youtube.com/live/jAyWg-8l7C0?feature=shared) / 2024.8.15.
+- YTN / 학부모도 수험생!...마음의 상처 관리 필요 (Parents are Test Takers Too!...Mental Health Care Needed) [YouTube](https://youtu.be/H8z_-NZe2iU?feature=shared) / 2019.8.7.
 
 ### Youtube
 
