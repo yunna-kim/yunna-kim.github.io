@@ -67,7 +67,7 @@ Research
 
 ## 🏆 Awards and Honors
 ### Academic Awards
-- 2024 |  **Most Prolific Author Award**, Kyung Hee Medical Center, Korea 
+- 2024 |  **Most Prolific Author Award of the Year**, Kyung Hee Medical Center, Korea 
 - 2024 |  **Outstanding Paper Award - Q4**, Kyung Hee Medical Center, Korea 
 - 2024 |  **Best Poster Communication, 16th European Congress for Integrative Medicine**, European Society of Integrative Medicine 
 - 2023 |  **Integrative Talent Award in Korean Medicine**, The Association of Women Korean Medical Doctor, Korea 
