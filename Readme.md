@@ -69,7 +69,7 @@ Research
 ### Academic Awards
 - 2024 |  **Most Prolific Author Award of the Year**, Kyung Hee Medical Center, Korea 
 - 2024 |  **Outstanding Paper Award - Q4**, Kyung Hee Medical Center, Korea 
-- 2024 |  **Best Poster Communication, 16th European Congress for Integrative Medicine** [Web](https://ecim24madrid.com/en/premios/), European Society of Integrative Medicine 
+- 2024 |  **Best Poster Communication, 16th European Congress for Integrative Medicine**, European Society of Integrative Medicine [Web](https://ecim24madrid.com/en/premios/)
 - 2023 |  **Integrative Talent Award in Korean Medicine**, The Association of Women Korean Medical Doctor, Korea 
 - 2020 |  **First Prize, Kyung Hee University Best Dissertation Award (Medical science)**, Kyung Hee University, Korea 
 - 2017 |  **Second Place, 22nd Resident Best Paper Award**, Kyung Hee Medical Center, Korea 
