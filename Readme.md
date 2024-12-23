@@ -77,8 +77,9 @@ Research
 - 2013 |  **Young Hur Jun Award (Talent Award)**, College of Korean Medicine, Kyung Hee University, Korea 
 
 ### Professional Awards
+- 2025 |  **Most Courteous Employee of the Month**, Kyung Hee Medical Center, Korea
 - 2024 |  **Outstanding Staff Award of the Year**, Kyung Hee Medical Center, Korea
-- 2022 |  **Most Courteous Employee**, Kyung Hee Medical Center, Korea
+- 2022 |  **Most Courteous Employee of the Month**, Kyung Hee Medical Center, Korea
 
 ## 🎤 Public Speaking
 ### TV & Radio
