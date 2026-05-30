@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Development of a Head Meridian Activity Measuring Device",
+    "funder": "KHIDI",
+    "amount": "712.5 million KRW",
+    "period": "2023.04.01–2027.12.31",
+    "role": "Principal Investigator",
+    "status": "ongoing",
+    "desc": "Development of a device for assessing head meridian activity, blood flow, and brain function."
+  },
+  {
+    "title": "Development of fNIRS-based Digital Biomarkers for Objective Diagnosis of Hwa-byung Pattern Identification and Treatment Response Prediction",
+    "funder": "KHIDI",
+    "amount": "220 million KRW",
+    "period": "2026.04.01–2028.12.31",
+    "role": "Principal Investigator",
+    "status": "ongoing",
+    "desc": "Clinical data construction for fNIRS-based assessment of Hwa-byung pattern identification and treatment response prediction."
+  },
+  {
+    "title": "Basic and Clinical Research on the Clinical Applicability of Saengmaek-san for Post-traumatic Stress Disorder",
+    "funder": "KHIDI",
+    "amount": "220 million KRW",
+    "period": "2026.04.01–2028.12.31",
+    "role": "Researcher",
+    "status": "ongoing",
+    "desc": "Basic and clinical research evaluating Saengmaek-san for PTSD."
+  },
+  {
+    "title": "Discovery of Herb-pair Prescriptions for Depression through AI-based Drug Repositioning and Lipocalin-2-related Mechanistic Research",
+    "funder": "National Research Foundation of Korea",
+    "amount": "135 million KRW",
+    "period": "2023.06.01–2026.02.28",
+    "role": "Principal Investigator",
+    "status": "ongoing",
+    "desc": "AI-based discovery of candidate herb-pairs and LCN2-related neuroinflammatory mechanisms."
+  },
+  {
+    "title": "Development of Korean Medicine Clinical Practice Guidelines and Critical Pathways for ADHD",
+    "funder": "KHIDI",
+    "amount": "150 million KRW",
+    "period": "2023.07.01–2024.12.31",
+    "role": "Principal Investigator",
+    "status": "completed",
+    "desc": "Development of Korean Medicine clinical practice guidelines and clinical pathways for ADHD."
+  },
+  {
+    "title": "Advancement of Korean Medicine Clinical Practice Guidelines and Clinical Pathways for Dementia",
+    "funder": "KHIDI",
+    "amount": "600 million KRW",
+    "period": "2023.04.01–2025.12.31",
+    "role": "Researcher",
+    "status": "ongoing",
+    "desc": "Updating Korean Medicine clinical practice guidelines and pathways for dementia."
+  },
+  {
+    "title": "Evaluation of Emotional Freedom Techniques for Post-traumatic Stress Disorder",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "600 million KRW",
+    "period": "2022.01.01–2024.12.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Clinical evaluation of EFT for PTSD."
+  },
+  {
+    "title": "Phase II Clinical Trial of the Herbal Medicine BTS for Major Depressive Disorder",
+    "funder": "KHIDI",
+    "amount": "500 million KRW",
+    "period": "2021.12.01–2024.05.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Phase II clinical trial of herbal medicine for major depressive disorder."
+  },
+  {
+    "title": "Pattern Identification, Anxiety, and Depression Study in Healthy Controls without Trauma Exposure",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "28 million KRW",
+    "period": "2021.05.07–2021.11.30",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Study of pattern identification, anxiety, and depression in healthy controls."
+  },
+  {
+    "title": "Observational Study of Korean Medicine Psychotherapy for Patients with Post-traumatic Stress Disorder",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "29 million KRW",
+    "period": "2020.07.17–2021.12.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Observational study of Korean Medicine psychotherapy in PTSD."
+  },
+  {
+    "title": "Development of Head Meridian Activity Measurement Algorithms and Clinical Data through Head Meridian Diagnosis Research",
+    "funder": "KHIDI",
+    "amount": "220 million KRW",
+    "period": "2021.05.01–2023.12.31",
+    "role": "Principal Investigator",
+    "status": "completed",
+    "desc": "Algorithm development and clinical data construction for head meridian activity measurement."
+  },
+  {
+    "title": "Mechanistic Study of Lipocalin-2-mediated Astrocyte–Microglia Crosstalk in Alzheimer's Disease by Herbal Components",
+    "funder": "National Research Foundation of Korea",
+    "amount": "135 million KRW",
+    "period": "2021.06.01–2024.02.29",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Mechanistic research on LCN2-mediated neuroimmune pathways in Alzheimer's disease."
+  },
+  {
+    "title": "Clinical Application Evaluation of Korean Medicine Clinical Pathways for Gynecologic, Psychiatric, ENT, and Pediatric Disorders",
+    "funder": "National Institute for Korean Medicine Development",
+    "amount": "49 million KRW",
+    "period": "2021.06.18–2022.02.28",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Clinical application evaluation of Korean Medicine clinical pathways."
+  },
+  {
+    "title": "Clinical Trials and Clinical Pathway Development for Advancing Korean Medicine Guidelines for Depression",
+    "funder": "KHIDI",
+    "amount": "275 million KRW",
+    "period": "2021.05.01–2023.12.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Clinical trials and CP development for depression guidelines."
+  },
+  {
+    "title": "Clinical Data Construction for Prescription Selection Support: Seoul–Gyeonggi Region",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "33 million KRW",
+    "period": "2020.09.01–2021.12.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Clinical data construction for prescription selection support."
+  },
+  {
+    "title": "Novel Neuroinflammatory Mechanisms of Depression Using an Astrocyte-deficient Animal Model and Discovery of Herbal Candidates Modulating Lipocalin-2",
+    "funder": "National Research Foundation of Korea",
+    "amount": "135 million KRW",
+    "period": "2020.06.01–2023.05.31",
+    "role": "Principal Investigator",
+    "status": "completed",
+    "desc": "Discovery of neuroinflammatory mechanisms and herbal candidates for depression."
+  },
+  {
+    "title": "Multicenter Phase II Clinical Trial of GBH I",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "60 million KRW",
+    "period": "2019.08.14–2021.11.30",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Multicenter phase II clinical trial of GBH."
+  },
+  {
+    "title": "Neuroimaging Clinical Study on the Neurological Mechanisms of Acupuncture for Mild Cognitive Impairment",
+    "funder": "Korea Institute of Oriental Medicine",
+    "amount": "60 million KRW",
+    "period": "2019.01.01–2020.11.30",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Neuroimaging clinical study of acupuncture in MCI."
+  },
+  {
+    "title": "Evaluation of Combined Use of Woohwangchungsimwon and Donepezil for Alzheimer's Disease",
+    "funder": "KHIDI",
+    "amount": "10 million KRW",
+    "period": "2019.04.01–2019.06.17",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Evaluation of combined therapy for Alzheimer's disease."
+  },
+  {
+    "title": "Neuroimmunological Effects of Depression in Sporadic Alzheimer's Disease and Discovery of Herbal Candidates via Lipocalin-2 Mechanisms",
+    "funder": "National Research Foundation of Korea",
+    "amount": "135 million KRW",
+    "period": "2018.06.01–2021.05.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Research on neuroimmune interactions between depression and Alzheimer's disease."
+  },
+  {
+    "title": "Development of Korean Medicine Clinical Practice Guidelines for Dementia",
+    "funder": "KHIDI",
+    "amount": "220 million KRW",
+    "period": "2018.01.01–2021.05.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Guideline development for dementia-related Korean Medicine interventions."
+  },
+  {
+    "title": "Clinical Research for Korean Medicine Clinical Practice Guidelines for Hwa-byung",
+    "funder": "KHIDI",
+    "amount": "337 million KRW",
+    "period": "2018.01.01–2019.12.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Clinical research for Hwa-byung guideline development."
+  },
+  {
+    "title": "Development of Food Products for Sleep Improvement",
+    "funder": "LG Household & Health Care",
+    "amount": "49 million KRW",
+    "period": "2016.12.01–2017.04.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Research on food products for sleep disturbance."
+  },
+  {
+    "title": "Evidence-based Evaluation of Korean Medicine Therapies for Cancer",
+    "funder": "National Cancer Control Planning Board",
+    "amount": "120 million KRW",
+    "period": "2010.06.01–2011.05.31",
+    "role": "Researcher",
+    "status": "completed",
+    "desc": "Evidence-based evaluation of Korean Medicine therapies in oncology."
+  }
+]
