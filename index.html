@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yunna Kim, MD (KM), PhD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf8f4;--warm:#f5f2ed;--sand:#e8e0d4;--taupe:#c4b8a8;--deep:#3d2f1f;--accent:#7a9e87;--acl:#a8c4b0;--text:#2c2418;--muted:#7a6e62;--border:#ddd5c8}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--deep);text-decoration:none;letter-spacing:.02em}
+.nav-links{display:flex;gap:.2rem;list-style:none}
+.nav-links a{font-size:.78rem;font-weight:500;color:var(--muted);text-decoration:none;padding:.35rem .65rem;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--deep);background:var(--sand)}
+.lang-switch{font-size:.78rem;font-weight:500;color:var(--accent);text-decoration:none;padding:.3rem .7rem;border:1px solid var(--acl);border-radius:20px;letter-spacing:.04em;transition:all .2s}
+.lang-switch:hover{background:var(--accent);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--deep);border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:56px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--border);padding:1rem 2rem;z-index:99;flex-direction:column;gap:.3rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:.9rem;color:var(--text);text-decoration:none;padding:.6rem 0;border-bottom:1px solid var(--border)}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:56px}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:6rem 4rem 6rem 5rem;background:var(--cream);position:relative}
+.hero-left::after{content:'';position:absolute;right:0;top:10%;bottom:10%;width:1px;background:var(--border)}
+.hero-tag{font-size:.72rem;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.5rem;display:flex;align-items:center;gap:.6rem}
+.hero-tag::before{content:'';width:24px;height:1px;background:var(--accent)}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;line-height:1.1;color:var(--deep);margin-bottom:.5rem}
+.hero-name em{font-style:italic;font-weight:300}
+.hero-title{font-size:.95rem;color:var(--muted);margin-bottom:2rem;line-height:1.5}
+.hero-summary{font-size:.9rem;color:var(--text);line-height:1.8;max-width:480px;border-left:2px solid var(--acl);padding-left:1.2rem;margin-bottom:2.5rem}
+.hero-links{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero-link{font-size:.78rem;font-weight:500;color:var(--deep);text-decoration:none;padding:.45rem 1rem;border:1px solid var(--border);border-radius:20px;transition:all .2s}
+.hero-link:hover{border-color:var(--accent);color:var(--accent);background:rgba(122,158,135,.06)}
+.hero-right{background:var(--warm);display:flex;flex-direction:column;justify-content:center;padding:6rem 4rem;gap:2.5rem}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.stat{padding:1.5rem;background:var(--cream);border-radius:8px;border:1px solid var(--border)}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--deep);line-height:1;margin-bottom:.3rem}
+.stat-label{font-size:.75rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.interests-box{padding:1.5rem;background:var(--deep);border-radius:8px;color:var(--cream)}
+.interests-box h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--acl);margin-bottom:1rem}
+.interest-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.interest-tag{font-size:.78rem;padding:.3rem .7rem;border:1px solid rgba(255,255,255,.15);border-radius:20px;color:rgba(255,255,255,.8)}
+section{padding:6rem 0}
+section:nth-child(even){background:var(--warm)}
+.container{max-width:1100px;margin:0 auto;padding:0 3rem}
+.section-header{margin-bottom:3.5rem}
+.section-tag{font-size:.72rem;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.section-tag::before{content:'';width:24px;height:1px;background:var(--accent)}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--deep);line-height:1.2}
+/* profile */
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.profile-block h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--deep);margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.edu-item{margin-bottom:1.4rem}
+.edu-degree{font-weight:500;color:var(--deep);font-size:.88rem}
+.edu-school{font-size:.83rem;color:var(--muted)}
+.edu-year{font-size:.75rem;color:var(--taupe);font-family:'DM Mono',monospace}
+.edu-note{font-size:.78rem;color:var(--accent);font-style:italic;margin-top:.2rem}
+.cert-list{list-style:none}
+.cert-list li{font-size:.85rem;color:var(--text);padding:.5rem 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.6rem}
+.cert-list li::before{content:'✦';color:var(--accent);font-size:.6rem}
+/* tabs */
+.research-tabs{display:flex;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-btn{font-size:.8rem;font-weight:500;padding:.5rem 1.2rem;border:1px solid var(--border);border-radius:20px;background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.03em;transition:all .2s}
+.tab-btn.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+.tab-btn:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+/* publications */
+.pub-item{padding:1.2rem 1.5rem;border-left:2px solid var(--border);margin-bottom:1rem;transition:border-color .2s}
+.pub-item:hover{border-left-color:var(--accent)}
+.pub-text{font-size:.85rem;line-height:1.7;color:var(--text)}
+.pub-text strong{color:var(--deep)}
+.pub-journal{font-size:.78rem;color:var(--accent);font-style:italic;margin-top:.3rem}
+.pub-year{font-size:.72rem;color:var(--taupe);font-family:'DM Mono',monospace;margin-bottom:.3rem}
+.pub-links{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem}
+.pub-btn{font-size:.72rem;font-weight:500;padding:.25rem .7rem;border-radius:12px;text-decoration:none;border:1px solid;transition:all .2s;white-space:nowrap}
+.btn-doi{color:#d35400;border-color:#d35400;background:rgba(211,84,0,.05)}.btn-doi:hover{background:#d35400;color:#fff}
+.btn-pubmed{color:#2980b9;border-color:#2980b9;background:rgba(41,128,185,.05)}.btn-pubmed:hover{background:#2980b9;color:#fff}
+.btn-scholar{color:#1a73e8;border-color:#1a73e8;background:rgba(26,115,232,.05)}.btn-scholar:hover{background:#1a73e8;color:#fff}
+.btn-url{color:var(--accent);border-color:var(--acl);background:rgba(122,158,135,.05)}.btn-url:hover{background:var(--accent);color:#fff}
+/* loading state */
+.pub-loading{text-align:center;padding:3rem;color:var(--muted);font-size:.88rem}
+.pub-loading .spinner{width:28px;height:28px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pub-error{padding:1.2rem 1.5rem;background:#fff5f5;border-left:2px solid #e74c3c;border-radius:0 4px 4px 0;font-size:.85rem;color:#c0392b;margin-bottom:1rem}
+.pub-count{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;font-style:italic}
+/* projects */
+.project-item{padding:1.5rem;border:1px solid var(--border);border-radius:8px;margin-bottom:1rem;background:var(--cream)}
+.project-title{font-weight:500;color:var(--deep);font-size:.88rem;margin-bottom:.5rem}
+.project-meta{font-size:.78rem;color:var(--muted);display:flex;gap:1.5rem;flex-wrap:wrap}
+/* patent */
+.patent-item{padding:1.2rem 1.5rem;background:var(--cream);border:1px solid var(--border);border-radius:8px;margin-bottom:1rem}
+.patent-text{font-size:.85rem;color:var(--text);line-height:1.6}
+.patent-num{font-size:.75rem;color:var(--accent);font-family:'DM Mono',monospace;margin-top:.4rem}
+/* awards */
+.awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.award-item{padding:1.3rem 1.5rem;border:1px solid var(--border);border-radius:8px;background:var(--cream);display:flex;gap:1rem;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
+.award-item:hover{border-color:var(--acl);box-shadow:0 2px 12px rgba(122,158,135,.1)}
+.award-year{font-family:'DM Mono',monospace;font-size:.78rem;color:var(--taupe);min-width:36px;padding-top:.1rem}
+.award-name{font-size:.85rem;font-weight:500;color:var(--deep)}
+.award-org{font-size:.78rem;color:var(--muted);margin-top:.2rem}
+/* media */
+.media-list{display:flex;flex-direction:column;gap:1rem}
+.media-item{padding:1.2rem 1.5rem;border:1px solid var(--border);border-radius:8px;background:var(--cream);display:flex;gap:1.2rem;align-items:flex-start}
+.media-badge{font-size:.68rem;font-weight:500;padding:.2rem .6rem;border-radius:3px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;margin-top:.1rem}
+.badge-tv{background:#fdebd0;color:#c0712a}.badge-radio{background:#d5e8d4;color:#387535}.badge-news{background:#dae8fc;color:#2a5fa8}
+.media-text{font-size:.85rem;color:var(--text);line-height:1.6}
+.media-title{font-weight:500;color:var(--deep)}
+.media-sub{font-size:.78rem;color:var(--muted);margin-top:.2rem}
+.media-link{font-size:.75rem;color:var(--accent);text-decoration:none;margin-top:.3rem;display:inline-block}
+/* news auto */
+.news-loading{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem}
+.news-item{padding:1rem 1.2rem;border:1px solid var(--border);border-radius:8px;background:var(--cream);margin-bottom:.8rem;display:flex;gap:1rem;align-items:flex-start}
+.news-date{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--taupe);min-width:80px;white-space:nowrap;padding-top:.15rem}
+.news-text a{font-size:.85rem;color:var(--deep);text-decoration:none;font-weight:500;line-height:1.5}
+.news-text a:hover{color:var(--accent)}
+.news-source{font-size:.75rem;color:var(--muted);margin-top:.25rem}
+/* service */
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.service-group h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--deep);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.service-item{font-size:.83rem;color:var(--text);padding:.5rem 0;border-bottom:1px solid var(--border)}
+.service-role{font-weight:500;color:var(--deep)}
+.service-period{font-size:.75rem;color:var(--taupe);font-family:'DM Mono',monospace}
+/* contact */
+#contact{background:var(--deep);color:var(--cream)}
+#contact .section-tag{color:var(--acl)}#contact .section-tag::before{background:var(--acl)}
+#contact .section-title{color:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact-info{display:flex;flex-direction:column;gap:1.2rem}
+.contact-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--acl);min-width:70px;padding-top:.1rem}
+.contact-value{font-size:.88rem;color:var(--cream);line-height:1.6}
+.contact-value a{color:var(--acl);text-decoration:none}
+.contact-links{display:flex;flex-direction:column;gap:.8rem}
+.contact-ext{display:flex;align-items:center;gap:.8rem;padding:.8rem 1.2rem;border:1px solid rgba(255,255,255,.12);border-radius:6px;text-decoration:none;color:var(--cream);font-size:.85rem;transition:all .2s}
+.contact-ext:hover{border-color:var(--acl);background:rgba(122,158,135,.1)}
+footer{background:#1a1208;color:var(--taupe);text-align:center;padding:2rem;font-size:.78rem}
+footer a{color:var(--acl);text-decoration:none}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}.hero-left{padding:3rem 2rem}.hero-left::after{display:none}.hero-right{padding:2rem}
+.profile-grid,.awards-grid,.service-grid,.contact-grid{grid-template-columns:1fr}
+.container{padding:0 1.5rem}.nav-links{display:none}.hamburger{display:flex}
+section{padding:4rem 0}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="nav-logo">Yunna Kim</a>
+  <ul class="nav-links">
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="kr.html" class="lang-switch">한국어</a>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#profile" onclick="toggleMenu()">Profile</a>
+  <a href="#research" onclick="toggleMenu()">Research</a>
+  <a href="#awards" onclick="toggleMenu()">Awards</a>
+  <a href="#media" onclick="toggleMenu()">Media</a>
+  <a href="#news" onclick="toggleMenu()">News</a>
+  <a href="#service" onclick="toggleMenu()">Service</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="kr.html">한국어</a>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-tag">Neuropsychiatrist · Korean Medicine</div>
+    <h1 class="hero-name">Yunna<br><em>Kim</em></h1>
+    <div class="hero-title">MD (KM), PhD · Clinical Assistant Professor<br>Kyung Hee University Korean Medicine Hospital</div>
+    <p class="hero-summary">Board-certified neuropsychiatrist researching the efficacy of Korean medicine in neuropsychiatric diseases — with a focus on neuroinflammation, herbal medicine, and integrative approaches to depression and Alzheimer's disease.</p>
+    <div class="hero-links">
+      <a href="mailto:yunna.anna.kim@khu.ac.kr" class="hero-link">✉ Email</a>
+      <a href="https://orcid.org/0000-0003-2286-1242" class="hero-link" target="_blank">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Yunna-Kim-4" class="hero-link" target="_blank">ResearchGate</a>
+      <a href="https://www.khmc.or.kr/en/treatment/department/2314000000/timetable.do" class="hero-link" target="_blank">Hospital Profile</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num" id="pubCount">—</div><div class="stat-label">Publications</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Active Grants</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Patents</div></div>
+      <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Academic Awards</div></div>
+    </div>
+    <div class="interests-box">
+      <h4>Research Interests</h4>
+      <div class="interest-tags">
+        <span class="interest-tag">Neuroinflammation</span>
+        <span class="interest-tag">Herbal Medicine</span>
+        <span class="interest-tag">Acupuncture</span>
+        <span class="interest-tag">Depression</span>
+        <span class="interest-tag">Alzheimer's Disease</span>
+        <span class="interest-tag">EEG</span>
+        <span class="interest-tag">Child &amp; Adolescent Psychiatry</span>
+        <span class="interest-tag">Psychodrama</span>
+        <span class="interest-tag">EFT</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">About</div><h2 class="section-title">Profile</h2></div>
+    <div class="profile-grid">
+      <div>
+        <div class="profile-block">
+          <h3>Education</h3>
+          <div class="edu-item"><div class="edu-degree">Ph.D. in Neuropsychiatry, Clinical Korean Medicine</div><div class="edu-school">Kyung Hee University, Seoul</div><div class="edu-year">2016 – 2020</div><div class="edu-note">🏆 First Prize, Best Dissertation Award (Medical Science)</div></div>
+          <div class="edu-item"><div class="edu-degree">M.Sc. in Neuropsychiatry, Clinical Korean Medicine</div><div class="edu-school">Kyung Hee University, Seoul</div><div class="edu-year">2014 – 2016</div></div>
+          <div class="edu-item"><div class="edu-degree">B.Sc. in Korean Medicine</div><div class="edu-school">Kyung Hee University, Seoul</div><div class="edu-year">2008 – 2014</div></div>
+          <div class="edu-item"><div class="edu-degree">Residency in Neuropsychiatry</div><div class="edu-school">Kyung Hee University Medical Center</div><div class="edu-year">2015 – 2018</div></div>
+        </div>
+        <div class="profile-block" style="margin-top:2rem">
+          <h3>Licensure &amp; Certifications</h3>
+          <ul class="cert-list"><li>Medical Doctor of Korean Medicine</li><li>Neuropsychiatrist of Korean Medicine (Board Certified)</li><li>Clinical Psychodrama Director</li></ul>
+        </div>
+      </div>
+      <div>
+        <div class="profile-block">
+          <h3>Academic Positions</h3>
+          <div class="edu-item"><div class="edu-degree">Clinical Assistant Professor</div><div class="edu-school">Dept. of Neuropsychiatry, Korean Medicine Hospital, Kyung Hee University Medical Center</div><div class="edu-year">Mar 2021 – Present</div></div>
+          <div class="edu-item"><div class="edu-degree">Part-time Lecturer</div><div class="edu-school">Neuropsychiatry, Clinical Korean Medicine, Kyung Hee University</div><div class="edu-year">Sep 2019 – Present</div></div>
+          <div class="edu-item"><div class="edu-degree">Fellow</div><div class="edu-school">Dept. of Neuropsychiatry, Korean Medicine Hospital, Kyung Hee University Medical Center</div><div class="edu-year">Mar 2019 – Feb 2021</div></div>
+        </div>
+        <div class="profile-block" style="margin-top:2rem">
+          <h3>Clinical &amp; Research Skills</h3>
+          <ul class="cert-list"><li>Child &amp; Adolescent Neuropsychiatry</li><li>Herbal Medicine · Acupuncture · Meditation</li><li>Psychodrama · Mindfulness · EFT</li><li>In vivo / In vitro Preclinical Research</li><li>Systematic Review &amp; Meta-analysis</li><li>Data Science</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Research</div><h2 class="section-title">Research</h2></div>
+    <div class="research-tabs">
+      <button class="tab-btn active" onclick="switchTab('publications',this)">Publications</button>
+      <button class="tab-btn" onclick="switchTab('projects',this)">Research Projects</button>
+      <button class="tab-btn" onclick="switchTab('patents',this)">Patents</button>
+      <button class="tab-btn" onclick="switchTab('conferences',this)">Conferences</button>
+    </div>
+
+    <!-- Publications: auto-loaded from ORCID -->
+    <div id="tab-publications" class="tab-content active">
+      <div class="pub-loading" id="pubLoading">
+        <div class="spinner"></div>
+        Loading publications from ORCID…
+      </div>
+      <div id="pubList"></div>
+      <p id="pubFooter" style="display:none;font-size:.78rem;color:var(--muted);margin-top:1.5rem;font-style:italic">
+        Full list on <a href="https://orcid.org/0000-0003-2286-1242" style="color:var(--accent)" target="_blank">ORCID</a> and <a href="https://www.researchgate.net/profile/Yunna-Kim-4" style="color:var(--accent)" target="_blank">ResearchGate</a>.
+      </p>
+    </div>
+
+    <!-- Projects -->
+    <div id="tab-projects" class="tab-content">
+      <div class="project-item"><div class="project-title">Establishment of Korean Medicine CPG and Critical Pathway for ADHD</div><div class="project-meta"><span>Principal Investigator</span><span>Korea Health Industry Development Institute</span><span>2023–2025</span></div></div>
+      <div class="project-item"><div class="project-title">Development of Head Meridian Activity Measuring Device</div><div class="project-meta"><span>Principal Investigator</span><span>Korea Health Industry Development Institute</span><span>2023–2027</span></div></div>
+      <div class="project-item"><div class="project-title">Discovery of Herb-pair for Depression via AI-based Drug Repositioning (Lipocalin-2 Mechanism)</div><div class="project-meta"><span>Principal Investigator</span><span>National Research Foundation of Korea</span><span>2023–2026</span></div></div>
+      <div class="project-item"><div class="project-title">Development of Head Meridian Activity Measurement Algorithm and Clinical Data Establishment</div><div class="project-meta"><span>Principal Investigator</span><span>Korea Health Industry Development Institute</span><span>2021–2023</span></div></div>
+      <div class="project-item"><div class="project-title">Novel Neuroinflammatory Mechanism of Depression Using Astrocyte-deficient Animal Model (Lipocalin-2)</div><div class="project-meta"><span>Principal Investigator</span><span>National Research Foundation of Korea</span><span>2020–2023</span></div></div>
+    </div>
+
+    <!-- Patents -->
+    <div id="tab-patents" class="tab-content">
+      <div class="patent-item"><div class="patent-text">Cho, S.-H., Lee, H.-Y., Choi, H.-J., <strong>Kim, Y.</strong> — A composition comprising herbal mixture extract for neuroprotection</div><div class="patent-num">Korea · Reg. No. 10-1987418-0000 · 2017</div></div>
+      <div class="patent-item"><div class="patent-text">Cho, S.-H., <strong>Kim, Y.</strong> — Composition comprising extract of Lindera glauca Blume for preventing or treating neurodegenerative disease</div><div class="patent-num">Korea · Reg. No. 10-1917132-0000 · 2016</div></div>
+      <div class="patent-item"><div class="patent-text">Cho, S.-H., Lee, H.-Y., Kwon, Y., <strong>Kim, Y.</strong> — Pharmaceutical composition for neurodegenerative disorder comprising extract of Sophora japonica L.</div><div class="patent-num">US · Application No. 16/328194 · 2016</div></div>
+    </div>
+
+    <!-- Conferences -->
+    <div id="tab-conferences" class="tab-content">
+      <p style="font-size:.82rem;font-weight:500;color:var(--deep);margin-bottom:1rem">Oral Presentations</p>
+      <div class="pub-item"><div class="pub-text"><strong>Kim, Y.</strong>, Lee, H.-Y., Choi, Y.-J., Cho, S.-H. (2019). Antidepressant effects of ginsenoside Rf on behavioral change in the glial degeneration model of depression.</div><div class="pub-journal">The Korean Society of Ginseng — Jeju, Korea</div></div>
+      <p style="font-size:.82rem;font-weight:500;color:var(--deep);margin:1.5rem 0 1rem">Poster Presentations</p>
+      <div class="pub-item"><div class="pub-text"><strong>Kim, Y.</strong>, Cho, S.-H. (2020). Mixture of Rhodiola rosea and Nelumbo nucifera ameliorates sleep disturbance.</div><div class="pub-journal">ICIMH 2020 (Online)</div></div>
+      <div class="pub-item"><div class="pub-text"><strong>Kim, Y.</strong>, Cho, S.-H. (2019). Danggui-Shaoyao-San for dementia.</div><div class="pub-journal">12th European Congress of Integrative Medicine, Barcelona, Spain</div></div>
+      <div class="pub-item"><div class="pub-text"><strong>Kim, Y.</strong>, Lee, H.-Y., Cho, S.-H. (2016). Antidepressant Effects of Pharmacopuncture (HJ11) on Chronic Stress-induced Changes in Mice.</div><div class="pub-journal">iSAMS 2016 — Hong Kong, China</div></div>
+      <div class="pub-item"><div class="pub-text"><strong>Kim, Y.</strong>, Cho, S.-H. (2011). CAM Practitioners' Perceptions of Evidence-based Medicine.</div><div class="pub-journal">6th ICCMR — Chengdu, China</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Recognition</div><h2 class="section-title">Awards &amp; Honors</h2></div>
+    <p style="font-size:.82rem;font-weight:500;color:var(--deep);margin-bottom:1rem">Academic Awards</p>
+    <div class="awards-grid">
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Most Prolific Author Award of the Year</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Outstanding Paper Award – Q4</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Best Poster Communication</div><div class="award-org">16th European Congress for Integrative Medicine, Madrid</div></div></div>
+      <div class="award-item"><div class="award-year">2023</div><div><div class="award-name">Integrative Talent Award in Korean Medicine</div><div class="award-org">Association of Women Korean Medical Doctor</div></div></div>
+      <div class="award-item"><div class="award-year">2020</div><div><div class="award-name">First Prize, Best Dissertation Award (Medical Science)</div><div class="award-org">Kyung Hee University</div></div></div>
+      <div class="award-item"><div class="award-year">2017</div><div><div class="award-name">2nd Place, 22nd Resident Best Paper Award</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2016</div><div><div class="award-name">1st Place, 21st Resident Best Paper Award</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2013</div><div><div class="award-name">Young Hur Jun Award (Talent Award)</div><div class="award-org">College of Korean Medicine, Kyung Hee University</div></div></div>
+    </div>
+    <p style="font-size:.82rem;font-weight:500;color:var(--deep);margin:2rem 0 1rem">Professional Awards</p>
+    <div class="awards-grid">
+      <div class="award-item"><div class="award-year">2025</div><div><div class="award-name">Most Courteous Employee of the Month</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Outstanding Staff Award of the Year</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+      <div class="award-item"><div class="award-year">2022</div><div><div class="award-name">Most Courteous Employee of the Month</div><div class="award-org">Kyung Hee Medical Center</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA (TV/Radio) -->
+<section id="media">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Media</div><h2 class="section-title">Media &amp; Broadcasts</h2></div>
+    <div class="media-list">
+      <div class="media-item"><div class="media-badge badge-radio">Radio</div><div class="media-text"><div class="media-title">TBS eFM · Morning Groove · [EDU Talk] Prof. Yunna Kim Episode</div><div class="media-sub">TBS eFM — December 4, 2024</div><a href="https://tbs.seoul.kr/cont/eFM/morning_groove/playlist/playlist.do?programId=PG2061752E" class="media-link" target="_blank">↗ Listen</a></div></div>
+      <div class="media-item"><div class="media-badge badge-tv">TV</div><div class="media-text"><div class="media-title">YonhapnewsTV · College Entrance Exam Approaching — Health Strategy for Test Takers</div><div class="media-sub">연합뉴스TV — November 8, 2024</div><a href="https://youtu.be/HDObrgjXjUU?feature=shared" class="media-link" target="_blank">↗ YouTube</a></div></div>
+      <div class="media-item"><div class="media-badge badge-tv">TV</div><div class="media-text"><div class="media-title">KBS Chungju · Chungcheong Now Live (Info Talk)</div><div class="media-sub">KBS충주 — August 15, 2024</div><a href="https://www.youtube.com/live/jAyWg-8l7C0?feature=shared" class="media-link" target="_blank">↗ YouTube</a></div></div>
+      <div class="media-item"><div class="media-badge badge-tv">TV</div><div class="media-text"><div class="media-title">YTN · Parents are Test Takers Too! — Mental Health Care for Families</div><div class="media-sub">YTN — August 7, 2019</div><a href="https://youtu.be/H8z_-NZe2iU?feature=shared" class="media-link" target="_blank">↗ YouTube</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS: auto-loaded from hospital page -->
+<section id="news">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Press</div><h2 class="section-title">News &amp; Press Coverage</h2></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:1.5rem">Auto-synced from <a href="https://www.khmc.or.kr/kr/treatment/doctor/14950/news.do" target="_blank" style="color:var(--accent)">Kyung Hee University Medical Center</a></p>
+    <div id="newsList"><div class="news-loading">Loading press coverage…</div></div>
+    <p id="newsMore" style="display:none;font-size:.78rem;color:var(--muted);margin-top:1rem;font-style:italic">
+      Full list at <a href="https://www.khmc.or.kr/kr/treatment/doctor/14950/news.do" target="_blank" style="color:var(--accent)">hospital website ↗</a>
+    </p>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section id="service">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Engagement</div><h2 class="section-title">Professional Service</h2></div>
+    <div class="service-grid">
+      <div>
+        <div class="service-group">
+          <h3>Academic Service</h3>
+          <div class="service-item"><div class="service-role">Director of Academic Affairs</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">Association of Women Korean Medical Doctor</div><div class="service-period">2024–Present</div></div>
+          <div class="service-item"><div class="service-role">Director of Medical Insurance Policy</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">Society of Korean Medicine Neuropsychiatry</div><div class="service-period">2022–Present</div></div>
+          <div class="service-item"><div class="service-role">Academic Affairs Staff</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">Korean Academy for Clinical Arts</div><div class="service-period">2021–Present</div></div>
+          <div class="service-item"><div class="service-role">Guest Editor — Anxiety &amp; Stress Disorders: Role of Botanicals</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">BMC Complementary and Alternative Medicine</div><div class="service-period">2024</div></div>
+          <div class="service-item"><div class="service-role">Manuscript Editor</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">Stress (Journal)</div><div class="service-period">2016–2020</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="service-group">
+          <h3>University Service</h3>
+          <div class="service-item"><div class="service-role">Counselor</div><div class="edu-school" style="font-size:.8rem;color:var(--muted)">Office of Counseling and Mental Health Services, College of Korean Medicine, Kyung Hee University</div><div class="service-period">2018–Present</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header"><div class="section-tag">Get in Touch</div><h2 class="section-title">Contact</h2></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:yunna.anna.kim@khu.ac.kr">yunna.anna.kim@khu.ac.kr</a></div></div>
+        <div class="contact-item"><div class="contact-label">Address</div><div class="contact-value">Dept. of Neuropsychiatry, Korean Medicine Hospital<br>Kyung Hee University Medical Center<br>23 Kyungheedae-ro, Dongdaemun-gu, Seoul 02447, Korea</div></div>
+        <div class="contact-item"><div class="contact-label">Hospital</div><div class="contact-value"><a href="https://www.khmc.or.kr/en/treatment/department/2314000000/timetable.do" target="_blank">Clinic Schedule (English) ↗</a></div></div>
+      </div>
+      <div class="contact-links">
+        <a href="https://orcid.org/0000-0003-2286-1242" class="contact-ext" target="_blank"><span>🔗</span> ORCID Profile</a>
+        <a href="https://www.researchgate.net/profile/Yunna-Kim-4" class="contact-ext" target="_blank"><span>📄</span> ResearchGate</a>
+        <a href="https://yunna-kim.github.io/" class="contact-ext" target="_blank"><span>💻</span> GitHub</a>
+        <a href="https://www.khmc.or.kr/kr/treatment/doctor/14950/profile.do" class="contact-ext" target="_blank"><span>🏥</span> Hospital Profile (Korean)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2025 Yunna Kim, MD (KM), PhD · Kyung Hee University Korean Medicine Hospital · <a href="kr.html">한국어</a></p></footer>
+
+<script>
+// ── Helpers ──────────────────────────────────────────
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+
+// ── Scholar search URL ────────────────────────────────
+function scholarUrl(title) {
+  return 'https://scholar.google.com/scholar?q=' + encodeURIComponent(title);
+}
+function pubmedUrl(title) {
+  return 'https://pubmed.ncbi.nlm.nih.gov/?term=' + encodeURIComponent(title);
+}
+
+// ── ORCID publications (public API, no key needed) ───
+async function loadPublications() {
+  const orcid = '0000-0003-2286-1242';
+  const listEl = document.getElementById('pubList');
+  const loadEl = document.getElementById('pubLoading');
+  const footEl = document.getElementById('pubFooter');
+  const countEl = document.getElementById('pubCount');
+
+  try {
+    const res = await fetch(
+      `https://pub.orcid.org/v3.0/${orcid}/works`,
+      { headers: { Accept: 'application/json' } }
+    );
+    if (!res.ok) throw new Error('ORCID API error');
+    const data = await res.json();
+
+    const works = data.group || [];
+    countEl.textContent = works.length + '+';
+
+    // Sort by publication date descending
+    works.sort((a, b) => {
+      const ya = a['work-summary']?.[0]?.['publication-date']?.year?.value || '0';
+      const yb = b['work-summary']?.[0]?.['publication-date']?.year?.value || '0';
+      return yb - ya;
+    });
+
+    loadEl.style.display = 'none';
+    let html = `<div class="pub-count">Showing ${works.length} publications loaded from ORCID (auto-updated)</div>`;
+
+    works.forEach(group => {
+      const w = group['work-summary']?.[0];
+      if (!w) return;
+
+      const title = w.title?.title?.value || 'Untitled';
+      const year  = w['publication-date']?.year?.value || '';
+      const journal = w['journal-title']?.value || '';
+      const doi   = w['external-ids']?.['external-id']
+        ?.find(e => e['external-id-type'] === 'doi')?.['external-id-value'] || '';
+
+      // Build link buttons
+      let btns = '';
+      if (doi) btns += `<a class="pub-btn btn-doi" href="https://doi.org/${doi}" target="_blank">DOI ↗</a>`;
+      btns += `<a class="pub-btn btn-pubmed" href="${pubmedUrl(title)}" target="_blank">PubMed</a>`;
+      btns += `<a class="pub-btn btn-scholar" href="${scholarUrl(title)}" target="_blank">Google Scholar</a>`;
+
+      html += `<div class="pub-item">
+        <div class="pub-year">${year}</div>
+        <div class="pub-text">${title}</div>
+        ${journal ? `<div class="pub-journal">${journal}</div>` : ''}
+        <div class="pub-links">${btns}</div>
+      </div>`;
+    });
+
+    listEl.innerHTML = html;
+    footEl.style.display = 'block';
+
+  } catch (err) {
+    loadEl.style.display = 'none';
+    countEl.textContent = '30+';
+    listEl.innerHTML = `<div class="pub-error">Could not load from ORCID automatically. <a href="https://orcid.org/0000-0003-2286-1242" target="_blank" style="color:var(--accent)">View full list on ORCID ↗</a></div>`;
+    footEl.style.display = 'block';
+  }
+}
+
+// ── Hospital news (CORS proxy via allorigins) ─────────
+async function loadNews() {
+  const el = document.getElementById('newsList');
+  const moreEl = document.getElementById('newsMore');
+  // km.khmc.or.kr = 한방병원 전용 서브도메인, news tab is #tab-news
+  const url = 'https://km.khmc.or.kr/kr/treatment/doctor/14950/news.do';
+
+  try {
+    const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+    const res = await fetch(proxy);
+    if (!res.ok) throw new Error('proxy error');
+    const json = await res.json();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(json.contents, 'text/html');
+
+    // Hospital structure: #tab-news .infonews_box_list ul > li > a.clearfix
+    //   <p class="f_l gry">제목</p>
+    //   <p class="f_r gry">2026-02-19</p>
+    const items = [];
+
+    // Primary selector — exact structure from source
+    doc.querySelectorAll('#tab-news .infonews_box_list ul li a').forEach(a => {
+      const titleEl = a.querySelector('p.f_l');
+      const dateEl  = a.querySelector('p.f_r');
+      if (!titleEl || !dateEl) return;
+
+      const rawTitle = titleEl.textContent.trim();
+      const date     = dateEl.textContent.trim();
+      const href     = a.getAttribute('href') || '';
+      if (!date.match(/^\d{4}-\d{2}-\d{2}$/)) return;
+
+      // Strip "한방신경정신과 김윤나 교수 - " prefix
+      const title = rawTitle.replace(/^[^-–]*[-–]\s*/, '').trim() || rawTitle;
+      const fullHref = href.startsWith('http') ? href
+                     : href.startsWith('//') ? 'https:' + href
+                     : 'https://km.khmc.or.kr' + href;
+
+      if (title) items.push({ title, date, href: fullHref });
+    });
+
+    // Fallback: any anchor containing date pattern in sibling p
+    if (items.length === 0) {
+      doc.querySelectorAll('a.clearfix').forEach(a => {
+        const ps = a.querySelectorAll('p');
+        if (ps.length < 2) return;
+        const rawTitle = ps[0].textContent.trim();
+        const date = ps[ps.length - 1].textContent.trim();
+        if (!date.match(/^\d{4}-\d{2}-\d{2}$/)) return;
+        const href = a.getAttribute('href') || '#';
+        const title = rawTitle.replace(/^[^-–]*[-–]\s*/, '').trim() || rawTitle;
+        const fullHref = href.startsWith('http') ? href : 'https://km.khmc.or.kr' + href;
+        if (title) items.push({ title, date, href: fullHref });
+      });
+    }
+
+    if (items.length === 0) throw new Error('no items parsed');
+
+    el.innerHTML = `<div class="pub-count">${items.length} press items synced from Kyung Hee University Medical Center</div>` +
+      items.slice(0, 20).map(item => `
+        <div class="news-item">
+          <div class="news-date">${item.date}</div>
+          <div class="news-text">
+            <a href="${item.href}" target="_blank">${item.title}</a>
+            <div class="news-source">경희대학교 한방병원</div>
+          </div>
+        </div>`).join('');
+    moreEl.style.display = 'block';
+
+  } catch (err) {
+    el.innerHTML = `<div class="news-item">
+      <div class="news-text">
+        <a href="https://km.khmc.or.kr/kr/treatment/doctor/14950/news.do" target="_blank" style="color:var(--accent)">
+          View full press coverage at Kyung Hee University Medical Center ↗
+        </a>
+        <div class="news-source" style="margin-top:.4rem;font-size:.75rem;color:var(--taupe)">
+          (Auto-sync unavailable — click to view on hospital website)
+        </div>
+      </div>
+    </div>`;
+    moreEl.style.display = 'block';
+  }
+}
+
+// ── Init ──────────────────────────────────────────────
+loadPublications();
+loadNews();
+</script>
+</body>
+</html>
