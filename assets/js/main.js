@@ -52,3 +52,29 @@ function initProfilePhotos(){
 }
 
 document.addEventListener('DOMContentLoaded', initProfilePhotos);
+
+function renderSupplementalPublications(selector,path){
+  const el=document.querySelector(selector); if(!el)return;
+  loadJSON(path).then(items=>{
+    el.innerHTML=`<div class="count">${items.length} supplemental domestic journal articles</div>`+items.map(p=>{
+      const btn=`<a class="pub-btn btn-scholar" href="${scholarUrl(p.title)}" target="_blank" rel="noopener">Google Scholar</a>`;
+      return `<div class="pub-item"><div class="year">${p.year||''}</div><div class="pub-text">${p.citation||p.title}</div>${p.journal?`<div class="pub-journal">${p.journal}${p.role?` · ${p.role}`:''}</div>`:''}<div class="pub-links">${btn}</div></div>`
+    }).join('')
+  }).catch(()=>{el.innerHTML='<div class="item">Supplemental publications could not be loaded.</div>'})
+}
+function renderHomeStats(lang='ko'){
+  const base=lang==='ko'?'assets':'../assets';
+  loadJSON(base+'/data/publications.json').then(items=>{
+    loadJSON(base+'/data/domestic_publications.json').then(extra=>setPubCount(items.length+Math.max(0, extra.length-4))).catch(()=>setPubCount(items.length));
+  }).catch(()=>{});
+  loadJSON(base+'/data/projects_'+(lang==='ko'?'ko':'en')+'.json').then(items=>{
+    const pi=items.filter(projectIsPI).length;
+    document.querySelectorAll('[data-pi-project-count]').forEach(el=>el.textContent=pi);
+  }).catch(()=>{});
+  loadJSON(base+'/data/patents_'+(lang==='ko'?'ko':'en')+'.json').then(items=>{
+    document.querySelectorAll('[data-patent-count]').forEach(el=>el.textContent=items.length);
+  }).catch(()=>{});
+  loadJSON(base+'/data/awards_'+(lang==='ko'?'ko':'en')+'.json').then(items=>{
+    document.querySelectorAll('[data-award-count]').forEach(el=>el.textContent=items.length);
+  }).catch(()=>{});
+}
