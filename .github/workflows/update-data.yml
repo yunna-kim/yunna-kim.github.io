@@ -17,12 +17,29 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install beautifulsoup4
-      - run: python scripts/update_publications.py
-      - run: python scripts/update_news.py
+      # Each source is allowed to fail on its own. Previously a failure in the
+      # news step aborted the job before the commit step, so a broken scrape
+      # also blocked publication updates from ever being saved.
+      - name: Update publications
+        id: pubs
+        continue-on-error: true
+        run: python scripts/update_publications.py
+      - name: Update news
+        id: news
+        continue-on-error: true
+        run: python scripts/update_news.py
       - name: Commit data updates
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/data/publications.json assets/data/news.json
           git commit -m "Update publications and news" || echo "No changes"
           git push
+      - name: Report source failures
+        if: always() && (steps.pubs.outcome == 'failure' || steps.news.outcome == 'failure')
+        run: |
+          echo "publications: ${{ steps.pubs.outcome }}"
+          echo "news: ${{ steps.news.outcome }}"
+          echo "::error::A data source failed. Whatever succeeded has still been committed."
+          exit 1
