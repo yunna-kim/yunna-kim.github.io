@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 """Mirror title/date/link only from Kyung Hee Korean Medicine Hospital doctor news page."""
-import json, pathlib, re, urllib.request
+import http.cookiejar, json, pathlib, re, urllib.request
 from bs4 import BeautifulSoup
 URL="https://km.khmc.or.kr/kr/treatment/doctor/14950/news.do"
 OUT=pathlib.Path("assets/data/news.json")
+def fetch(url):
+    # The hospital site issues a session cookie and redirects back to the same URL.
+    # Without a cookie jar the redirect loops forever and urllib raises HTTP Error 302.
+    opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    opener.addheaders=[("User-Agent","yunna-kim-website/1.0 (mailto:yunna.anna.kim@khu.ac.kr)"),
+                       ("Accept","text/html,application/xhtml+xml")]
+    with opener.open(url,timeout=30) as r:
+        return r.read().decode("utf-8","ignore")
 def main():
-    req=urllib.request.Request(URL,headers={"User-Agent":"yunna-kim-website/1.0 (mailto:yunna.anna.kim@khu.ac.kr)"})
-    html=urllib.request.urlopen(req,timeout=30).read().decode("utf-8","ignore")
+    html=fetch(URL)
     soup=BeautifulSoup(html,"html.parser")
     items=[]
     for a in soup.select('#tab-news .infonews_box_list ul li a'):
