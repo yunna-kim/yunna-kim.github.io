@@ -86,7 +86,10 @@ def main():
         for e in ((w.get("external-ids") or {}).get("external-id") or []):
             if e.get("external-id-type")=="doi":
                 doi=norm_doi(e.get("external-id-value")); break
-        if (doi and doi in seen_doi) or (not doi and norm_title(title) in seen_title):
+        # Title is checked even when a DOI is present: the same paper is often
+        # recorded with a different (or missing) DOI on each side, which would
+        # otherwise slip past the DOI check and be appended as a duplicate.
+        if (doi and doi in seen_doi) or norm_title(title) in seen_title:
             continue
         print(f"  + {year} {title[:70]}")
         entry=crossref_entry(doi,title,year,journal) if doi else \
