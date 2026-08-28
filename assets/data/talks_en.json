@@ -1,11 +1,43 @@
 [
   {
     "category": "Invited lecture",
-    "date": "2026.06.18–2026.07.30",
+    "date": "2026.09.15–2026.11.03",
     "year": "2026",
-    "event": "Seoul 50 Plus Foundation",
+    "event": "Seoul 50 Plus Foundation, Southern Campus",
     "location": "Seoul, Korea",
     "title": "Good Morning, Good Night: Pain-Free Sleep Solutions"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2026.06.18–2026.07.30",
+    "year": "2026",
+    "event": "Seoul 50 Plus Foundation, Northern Campus",
+    "location": "Seoul, Korea",
+    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.12.02",
+    "year": "2025",
+    "event": "Kyung Hee University College of Korean Medicine (Prof. Hi-Joon Park Lab)",
+    "location": "Seoul, Korea",
+    "title": "Case Study of a Funded NRF Basic Research Proposal"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.11.22",
+    "year": "2025",
+    "event": "ISAK 2025 (International Symposium on Acupuncture Korea) — Pre-conference Mentorship Session for Women Researchers",
+    "location": "Seoul, Korea",
+    "title": "Growing as a Researcher in Korean Medicine Clinical Practice"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.11.14",
+    "year": "2025",
+    "event": "Lecture at Seoul Foundation of Women & Family",
+    "location": "Seoul, Korea",
+    "title": "Burnout and Recovery among Digital Sexual Violence Responders: Mind Care through Korean Medicine"
   },
   {
     "category": "Invited lecture",
@@ -14,14 +46,6 @@
     "event": "Public Lecture, Seongbuk-gu Dongsan Branch Office",
     "location": "Seoul, Korea",
     "title": "Brain Health for Preserving Memory"
-  },
-  {
-    "category": "Invited lecture",
-    "date": "2025.11.02",
-    "year": "2025",
-    "event": "International Society of Acupuncture and Korean Medicine (ISAK)",
-    "location": "Seoul, Korea",
-    "title": "Growing as a Researcher in Korean Medicine Clinical Practice"
   },
   {
     "category": "Invited lecture",
@@ -350,13 +374,5 @@
     "event": "6th International Congress on Complementary Medicine Research",
     "location": "Chengdu, China",
     "title": "Complementary and Alternative Medicine Practitioners' Perceptions of the Route to Evidence-based Medicine; Questionnaire Survey and Qualitative Study"
-  },
-  {
-    "category": "Invited lecture",
-    "date": "2025.11.14",
-    "year": "2025",
-    "event": "Lecture at Seoul Foundation of Women & Family",
-    "location": "Seoul, Korea",
-    "title": "Burnout and Recovery among Digital Sexual Violence Responders: Mind Care through Korean Medicine"
   }
 ]

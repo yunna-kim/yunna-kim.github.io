@@ -1,11 +1,43 @@
 [
   {
     "category": "Invited lecture",
-    "date": "2026.06.18–2026.07.30",
+    "date": "2026.09.15–2026.11.03",
     "year": "2026",
-    "event": "서울시 50플러스 재단",
+    "event": "서울시50플러스재단 남부캠퍼스",
     "location": "서울, 대한민국",
     "title": "'굿모닝, 굿나잇!' 통증 제로, 숙면 솔루션"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2026.06.18–2026.07.30",
+    "year": "2026",
+    "event": "서울시50플러스재단 북부캠퍼스",
+    "location": "서울, 대한민국",
+    "title": "'굿모닝, 굿나잇!' 통증 제로, 숙면 솔루션"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.12.02",
+    "year": "2025",
+    "event": "경희대학교 한의과대학 (박히준 교수 연구실)",
+    "location": "서울, 대한민국",
+    "title": "한국연구재단 기본연구 사례 발표"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.11.22",
+    "year": "2025",
+    "event": "ISAK 2025 (대한침구의학회) 사전행사 — 여성 한의 연구자 커리어 개발 멘토십",
+    "location": "서울, 대한민국",
+    "title": "한의계 임상 현장에서 연구자로 성장하기"
+  },
+  {
+    "category": "Invited lecture",
+    "date": "2025.11.14",
+    "year": "2025",
+    "event": "서울특별시여성가족재단 강연",
+    "location": "서울, 대한민국",
+    "title": "디지털 성폭력 대응자의 소진과 회복 — 한의학으로 접근하는 마음돌봄"
   },
   {
     "category": "Invited lecture",
@@ -14,14 +46,6 @@
     "event": "성북구 동산지소 구민 대상 강의",
     "location": "서울, 대한민국",
     "title": "기억을 지키는 뇌 건강 이야기"
-  },
-  {
-    "category": "Invited lecture",
-    "date": "2025.11.02",
-    "year": "2025",
-    "event": "ISAK 발표",
-    "location": "서울, 대한민국",
-    "title": "한의계 임상 현장에서 연구자로 성장하기"
   },
   {
     "category": "Invited lecture",
@@ -350,13 +374,5 @@
     "event": "6th International Congress on Complementary Medicine Research",
     "location": "Chengdu, China",
     "title": "Complementary and Alternative Medicine Practitioners' Perceptions of the Route to Evidence-based Medicine; Questionnaire Survey and Qualitative Study"
-  },
-  {
-    "category": "Invited lecture",
-    "date": "2025.11.14",
-    "year": "2025",
-    "event": "서울특별시여성가족재단 강연",
-    "location": "서울, 대한민국",
-    "title": "디지털 성폭력 대응자의 소진과 회복 — 한의학으로 접근하는 마음돌봄"
   }
 ]
