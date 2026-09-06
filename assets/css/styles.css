@@ -31,6 +31,7 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 
 /* 학회·강연 지도 */
 #talk-map{width:100%;height:460px;border:1px solid var(--border);border-radius:14px;background:var(--white);z-index:0}
+@media(max-width:760px){#talk-map{height:280px}}
 .map-pop h4{font-size:.9rem;color:var(--deep);margin-bottom:.5rem}
 .map-pop ul{list-style:none;margin:0;padding:0;max-height:230px;overflow-y:auto}
 .map-pop li{font-size:.78rem;color:var(--text);padding:.4rem 0;border-top:1px solid var(--border);line-height:1.5}
