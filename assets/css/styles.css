@@ -37,6 +37,11 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .map-pop li{font-size:.78rem;color:var(--text);padding:.4rem 0;border-top:1px solid var(--border);line-height:1.5}
 .map-pop-date{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--taupe);margin-right:.35rem}
 .map-pop-event{display:block;font-size:.72rem;color:var(--muted);margin-top:.15rem}
+/* 좁은 화면: 팝업이 지도(280px)보다 길어지지 않게, 그리고 확대 버튼에 제목이 가리지 않게 */
+@media(max-width:760px){#talk-map .map-pop ul{max-height:110px}
+/* 컨트롤 레이어가 지도 레이어 밖에 있어 z-index로는 팝업을 위로 못 올린다.
+   좁은 화면에선 팝업이 제목을 가리므로 버튼을 감춘다 — 핀치 확대는 그대로 동작한다. */
+#talk-map .leaflet-control-zoom{display:none}}
 .leaflet-container{font:inherit}
 .profile-list li.thesis-note{font-size:.8rem;color:var(--muted);line-height:1.6}
 .profile-list li.thesis-note::before{content:'↳';color:var(--taupe)}

@@ -113,6 +113,8 @@ function renderTalkMap(elId, talksPath, locPath, lang='ko'){
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
       {maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
     const pts=[];
+    // 팝업이 지도보다 넓으면 오른쪽 글자가 잘린다. 컨테이너 폭에 맞춰 줄인다.
+    const popW=()=>Math.max(200,Math.min(330,el.clientWidth-46));
     keys.forEach(k=>{
       const g=groups[k], n=g.items.length;
       const name=lang==='ko'?g.c.ko:g.c.en;
@@ -123,7 +125,7 @@ function renderTalkMap(elId, talksPath, locPath, lang='ko'){
       L.circleMarker([g.c.lat,g.c.lng],{
         radius:Math.min(9+n*1.6,22),color:'#7a9e87',weight:2,
         fillColor:'#7a9e87',fillOpacity:.45
-      }).addTo(map).bindPopup(`<div class="map-pop"><h4>${head}</h4><ul>${li}</ul></div>`,{maxWidth:330});
+      }).addTo(map).bindPopup(`<div class="map-pop"><h4>${head}</h4><ul>${li}</ul></div>`,{maxWidth:popW()});
       pts.push([g.c.lat,g.c.lng]);
     });
     el._map=map;
@@ -131,7 +133,11 @@ function renderTalkMap(elId, talksPath, locPath, lang='ko'){
     // 레이아웃이 끝난 뒤 크기를 다시 재고 범위를 맞춘다. maxZoom 은 안전장치.
     const fit=()=>{map.invalidateSize();map.fitBounds(pts,{padding:[34,34],maxZoom:6});};
     fit(); setTimeout(fit,120);
-    if(window.ResizeObserver){new ResizeObserver(()=>map.invalidateSize()).observe(el);}
+    if(window.ResizeObserver){new ResizeObserver(()=>{
+      map.invalidateSize();
+      const w=popW();
+      map.eachLayer(l=>{const p=l.getPopup&&l.getPopup(); if(p)p.options.maxWidth=w;});
+    }).observe(el);}
   }).catch(()=>{el.style.display='none'});
 }
 
