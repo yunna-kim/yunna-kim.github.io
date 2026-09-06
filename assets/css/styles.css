@@ -36,3 +36,5 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .map-pop-date{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--taupe);margin-right:.35rem}
 .map-pop-event{display:block;font-size:.72rem;color:var(--muted);margin-top:.15rem}
 .leaflet-container{font:inherit}
+.profile-list li.thesis-note{font-size:.8rem;color:var(--muted);line-height:1.6}
+.profile-list li.thesis-note::before{content:'↳';color:var(--taupe)}
