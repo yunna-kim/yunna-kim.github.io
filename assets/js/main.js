@@ -134,3 +134,15 @@ function renderTalkMap(elId, talksPath, locPath, lang='ko'){
     if(window.ResizeObserver){new ResizeObserver(()=>map.invalidateSize()).observe(el);}
   }).catch(()=>{el.style.display='none'});
 }
+
+// 연구 페이지 상단 요약 — 데이터에서 세므로 항목을 추가하면 자동으로 따라온다.
+function renderResearchStats(base, lang='ko'){
+  const set=(k,v)=>document.querySelectorAll('[data-research-'+k+']').forEach(el=>el.textContent=v);
+  loadJSON(base+'/data/projects_'+(lang==='ko'?'ko':'en')+'.json').then(p=>{
+    set('all',p.length); set('pi',p.filter(projectIsPI).length);
+  }).catch(()=>{});
+  loadJSON(base+'/data/patents_'+(lang==='ko'?'ko':'en')+'.json').then(p=>{
+    const reg=x=>['등록','Registered','Registration'].indexOf(x.status)>=0;
+    set('patents',p.length); set('patentsreg',p.filter(reg).length);
+  }).catch(()=>{});
+}

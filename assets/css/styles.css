@@ -48,3 +48,10 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 /* 국문 페이지 소제목 — 한글 위, 영어는 아래 보조 표기 */
 .h-en{display:block;margin-top:.24rem;font-family:'DM Sans',sans-serif;font-size:.74rem;
   font-weight:400;color:var(--muted);letter-spacing:.02em;line-height:1.45}
+
+/* 연구 페이지 상단 요약 패널 */
+.stat-row.stat-row-4{grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat-row-4 .stat{padding:1.25rem}
+.stat-row-4 .stat-num{font-size:2.1rem}
+@media(max-width:900px){.stat-row.stat-row-4{grid-template-columns:1fr 1fr}}
+#projects-all-section{scroll-margin-top:80px}
