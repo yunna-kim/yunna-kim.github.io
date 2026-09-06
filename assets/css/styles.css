@@ -56,3 +56,5 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 @media(max-width:900px){.stat-row.stat-row-4{grid-template-columns:1fr 1fr}}
 #projects-all-section{scroll-margin-top:80px}
 .stat-sub{font-size:.7rem;color:var(--taupe);margin-top:.28rem;line-height:1.4}
+/* 목록 항목 안의 보조 줄 (협력 기관 등) */
+.profile-list li .li-sub{display:block;margin-top:.22rem;font-size:.76rem;color:var(--muted);line-height:1.55}
