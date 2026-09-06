@@ -58,3 +58,5 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .stat-sub{font-size:.7rem;color:var(--taupe);margin-top:.28rem;line-height:1.4}
 /* 목록 항목 안의 보조 줄 (협력 기관 등) */
 .profile-list li .li-sub{display:block;margin-top:.22rem;font-size:.76rem;color:var(--muted);line-height:1.55}
+.item-group-title:first-child{margin-top:0}
+.group-count{font-family:'DM Mono',monospace;font-size:.72rem;font-weight:400;color:var(--taupe);margin-left:.4rem}

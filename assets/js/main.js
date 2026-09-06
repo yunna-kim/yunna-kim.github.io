@@ -155,3 +155,24 @@ function renderResearchStats(base, lang='ko'){
     document.querySelectorAll('[data-research-sub-intl]').forEach(el=>el.textContent=sub(i.length,i.filter(reg).length));
   }).catch(()=>{});
 }
+
+// 활동 전체 목록 — category 별로 소제목을 달아 묶어서 그린다.
+// 분류 순서는 데이터에 나온 순서를 따른다.
+function renderServiceGrouped(selector, path){
+  const el=document.querySelector(selector); if(!el)return;
+  loadJSON(path).then(items=>{
+    const order=[], groups={};
+    items.forEach(x=>{
+      const c=x.category||'';
+      if(!groups[c]){groups[c]=[]; order.push(c);}
+      groups[c].push(x);
+    });
+    el.innerHTML=order.map(c=>{
+      const rows=groups[c].map(x=>
+        `<div class="item"><div class="item-title">${x.title||''}</div>`
+        +`<div class="item-meta">${[x.org,x.period].filter(Boolean).map(v=>`<span>${v}</span>`).join('')}</div></div>`
+      ).join('');
+      return `<h3 class="item-group-title">${c} <span class="group-count">${groups[c].length}</span></h3>${rows}`;
+    }).join('');
+  }).catch(()=>{el.innerHTML='<div class="item">활동 목록을 불러오지 못했습니다.</div>'});
+}
