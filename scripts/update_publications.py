@@ -9,6 +9,9 @@ they match the APA style of the hand-curated entries.
 import json, pathlib, re, time, unicodedata, urllib.parse, urllib.request
 ORCID="0000-0003-2286-1242"
 OUT=pathlib.Path("assets/data/publications.json")
+# 국내 학술지 논문은 별도 목록에서 관리한다. ORCID에는 함께 들어 있어서
+# 이 목록도 중복 검사 대상에 넣지 않으면 국외 목록에 다시 섞여 들어온다.
+DOMESTIC=pathlib.Path("assets/data/domestic_publications.json")
 UA="yunna-kim-website/1.0 (mailto:yunna.anna.kim@khu.ac.kr)"
 
 def get(url):
@@ -72,8 +75,10 @@ def crossref_entry(doi, fallback_title, fallback_year, fallback_journal):
 
 def main():
     existing=json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else []
-    seen_doi={norm_doi(p.get("doi")) for p in existing if p.get("doi")}
-    seen_title={norm_title(p.get("title")) for p in existing if p.get("title")}
+    domestic=json.loads(DOMESTIC.read_text(encoding="utf-8")) if DOMESTIC.exists() else []
+    known=existing+domestic
+    seen_doi={norm_doi(p.get("doi")) for p in known if p.get("doi")}
+    seen_title={norm_title(p.get("title")) for p in known if p.get("title")}
 
     data=get(f"https://pub.orcid.org/v3.0/{ORCID}/works")
     added=[]
