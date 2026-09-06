@@ -93,3 +93,44 @@ function renderJournalPublications(selector,path,label='journal articles'){
     }).join('')
   }).catch(()=>{el.innerHTML='<div class="item">Supplemental journal articles could not be loaded.</div>'})
 }
+
+// 학회·강연 지도. talks_*.json 과 talk_locations.json 만 보고 그리므로,
+// 발표를 추가하면 지도에도 자동으로 반영된다. (Leaflet + OpenStreetMap)
+function renderTalkMap(elId, talksPath, locPath, lang='ko'){
+  const el=document.getElementById(elId); if(!el)return;
+  if(!window.L){el.style.display='none';return;}
+  Promise.all([loadJSON(talksPath),loadJSON(locPath)]).then(([talks,locs])=>{
+    const groups={};
+    talks.forEach(t=>{
+      const c=locs[t.location]; if(!c)return;
+      const k=c.lat+','+c.lng;
+      if(!groups[k])groups[k]={c:c,items:[]};
+      groups[k].items.push(t);
+    });
+    const keys=Object.keys(groups);
+    if(!keys.length){el.style.display='none';return;}
+    const map=L.map(elId,{scrollWheelZoom:false});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+    const pts=[];
+    keys.forEach(k=>{
+      const g=groups[k], n=g.items.length;
+      const name=lang==='ko'?g.c.ko:g.c.en;
+      const head=lang==='ko'?`${name} · ${n}건`:`${name} · ${n} ${n>1?'presentations':'presentation'}`;
+      g.items.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+      const li=g.items.map(t=>`<li><span class="map-pop-date">${t.date||''}</span> ${t.title||''}`
+        +(t.event?`<span class="map-pop-event">${t.event}</span>`:'')+`</li>`).join('');
+      L.circleMarker([g.c.lat,g.c.lng],{
+        radius:Math.min(9+n*1.6,22),color:'#7a9e87',weight:2,
+        fillColor:'#7a9e87',fillOpacity:.45
+      }).addTo(map).bindPopup(`<div class="map-pop"><h4>${head}</h4><ul>${li}</ul></div>`,{maxWidth:330});
+      pts.push([g.c.lat,g.c.lng]);
+    });
+    el._map=map;
+    // 컨테이너 크기가 잡히기 전에 fitBounds 가 돌면 최대 줌으로 확대돼 버린다.
+    // 레이아웃이 끝난 뒤 크기를 다시 재고 범위를 맞춘다. maxZoom 은 안전장치.
+    const fit=()=>{map.invalidateSize();map.fitBounds(pts,{padding:[34,34],maxZoom:6});};
+    fit(); setTimeout(fit,120);
+    if(window.ResizeObserver){new ResizeObserver(()=>map.invalidateSize()).observe(el);}
+  }).catch(()=>{el.style.display='none'});
+}

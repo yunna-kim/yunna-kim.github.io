@@ -27,3 +27,12 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .subsection-title{font-size:1rem;font-weight:600;color:var(--deep);margin:0 0 1rem 0}
 #patents-section{scroll-margin-top:80px}
 #projects-pi-section{scroll-margin-top:80px}
+
+/* 학회·강연 지도 */
+#talk-map{width:100%;height:460px;border:1px solid var(--border);border-radius:14px;background:var(--white);z-index:0}
+.map-pop h4{font-size:.9rem;color:var(--deep);margin-bottom:.5rem}
+.map-pop ul{list-style:none;margin:0;padding:0;max-height:230px;overflow-y:auto}
+.map-pop li{font-size:.78rem;color:var(--text);padding:.4rem 0;border-top:1px solid var(--border);line-height:1.5}
+.map-pop-date{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--taupe);margin-right:.35rem}
+.map-pop-event{display:block;font-size:.72rem;color:var(--muted);margin-top:.15rem}
+.leaflet-container{font:inherit}

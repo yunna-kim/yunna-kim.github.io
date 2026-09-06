@@ -1,0 +1,104 @@
+{
+  "서울, 대한민국": {
+    "lat": 37.5665,
+    "lng": 126.978,
+    "ko": "서울",
+    "en": "Seoul"
+  },
+  "Seoul, Korea": {
+    "lat": 37.5665,
+    "lng": 126.978,
+    "ko": "서울",
+    "en": "Seoul"
+  },
+  "부산, 대한민국": {
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "ko": "부산",
+    "en": "Busan"
+  },
+  "Busan, Korea": {
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "ko": "부산",
+    "en": "Busan"
+  },
+  "대전, 대한민국": {
+    "lat": 36.3504,
+    "lng": 127.3845,
+    "ko": "대전",
+    "en": "Daejeon"
+  },
+  "Daejeon, Korea": {
+    "lat": 36.3504,
+    "lng": 127.3845,
+    "ko": "대전",
+    "en": "Daejeon"
+  },
+  "Jeju, Korea": {
+    "lat": 33.4996,
+    "lng": 126.5312,
+    "ko": "제주",
+    "en": "Jeju"
+  },
+  "제주, 대한민국": {
+    "lat": 33.4996,
+    "lng": 126.5312,
+    "ko": "제주",
+    "en": "Jeju"
+  },
+  "Madrid, Spain": {
+    "lat": 40.4168,
+    "lng": -3.7038,
+    "ko": "마드리드 (스페인)",
+    "en": "Madrid, Spain"
+  },
+  "Barcelona, Spain": {
+    "lat": 41.3851,
+    "lng": 2.1734,
+    "ko": "바르셀로나 (스페인)",
+    "en": "Barcelona, Spain"
+  },
+  "Porto, Portugal": {
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "ko": "포르투 (포르투갈)",
+    "en": "Porto, Portugal"
+  },
+  "Rome, Italy": {
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "ko": "로마 (이탈리아)",
+    "en": "Rome, Italy"
+  },
+  "New York, USA": {
+    "lat": 40.7128,
+    "lng": -74.006,
+    "ko": "뉴욕 (미국)",
+    "en": "New York, USA"
+  },
+  "Newport Beach, USA": {
+    "lat": 33.6189,
+    "lng": -117.9298,
+    "ko": "뉴포트비치 (미국)",
+    "en": "Newport Beach, USA"
+  },
+  "Cleveland, USA": {
+    "lat": 41.4993,
+    "lng": -81.6944,
+    "ko": "클리블랜드 (미국)",
+    "en": "Cleveland, USA"
+  },
+  "Hong Kong": {
+    "lat": 22.3193,
+    "lng": 114.1694,
+    "ko": "홍콩",
+    "en": "Hong Kong"
+  },
+  "Chengdu, China": {
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "ko": "청두 (중국)",
+    "en": "Chengdu, China"
+  }
+}
