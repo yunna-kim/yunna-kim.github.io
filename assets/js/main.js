@@ -142,7 +142,16 @@ function renderResearchStats(base, lang='ko'){
     set('all',p.length); set('pi',p.filter(projectIsPI).length);
   }).catch(()=>{});
   loadJSON(base+'/data/patents_'+(lang==='ko'?'ko':'en')+'.json').then(p=>{
+    const ko=lang!=='en';
     const reg=x=>['등록','Registered','Registration'].indexOf(x.status)>=0;
-    set('patents',p.length); set('patentsreg',p.filter(reg).length);
+    const dom=x=>x.country===(ko?'대한민국':'Korea');
+    const d=p.filter(dom), i=p.filter(x=>!dom(x));
+    const sub=(a,r)=>{const parts=[];
+      if(r) parts.push(ko?('등록 '+r+'건'):(r+' registered'));
+      if(a-r) parts.push(ko?('출원 '+(a-r)+'건'):((a-r)+' filed'));
+      return parts.join(' · ');};
+    set('patentsdom',d.length); set('patentsintl',i.length);
+    document.querySelectorAll('[data-research-sub-dom]').forEach(el=>el.textContent=sub(d.length,d.filter(reg).length));
+    document.querySelectorAll('[data-research-sub-intl]').forEach(el=>el.textContent=sub(i.length,i.filter(reg).length));
   }).catch(()=>{});
 }

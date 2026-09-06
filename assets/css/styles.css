@@ -55,3 +55,4 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .stat-row-4 .stat-num{font-size:2.1rem}
 @media(max-width:900px){.stat-row.stat-row-4{grid-template-columns:1fr 1fr}}
 #projects-all-section{scroll-margin-top:80px}
+.stat-sub{font-size:.7rem;color:var(--taupe);margin-top:.28rem;line-height:1.4}
