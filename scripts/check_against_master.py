@@ -32,7 +32,7 @@ def load(name):
 def keys_of(x):
     """DOI 와 제목 앞부분 — 둘 중 하나만 맞아도 같은 항목으로 본다.
     마스터의 옛 논문에는 DOI 가 없어서 제목 대조가 필요하다."""
-    ks = {norm(x.get("title"))[:40], norm(x.get("title_en"))[:40]}
+    ks = {norm(x.get(k))[:40] for k in ("title", "title_en", "title_ko")}
     if x.get("doi"):
         ks.add(str(x["doi"]).lower())
     return {k for k in ks if k}
