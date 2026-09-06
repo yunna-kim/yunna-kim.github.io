@@ -38,3 +38,13 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
 .leaflet-container{font:inherit}
 .profile-list li.thesis-note{font-size:.8rem;color:var(--muted);line-height:1.6}
 .profile-list li.thesis-note::before{content:'↳';color:var(--taupe)}
+
+/* 프로필 — 면허 카드 전체 너비, 목록은 데스크톱에서 3열 */
+.license-card{width:100%}
+.license-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0 2rem}
+@media(max-width:900px){.license-list{grid-template-columns:1fr}}
+/* 학위논문상 강조 */
+.award-line{display:inline-block;margin-top:.6rem;padding:.32rem .8rem;border-radius:999px;
+  border:1px solid var(--acl);background:rgba(122,158,135,.12);
+  color:var(--deep);font-weight:600;font-size:.8rem;line-height:1.5}
+.award-line::before{content:'✦';color:var(--accent);margin-right:.4rem;font-size:.7rem}
