@@ -48,3 +48,7 @@ main section{padding:5.5rem 0}main section:nth-child(even){background:var(--warm
   border:1px solid var(--acl);background:rgba(122,158,135,.12);
   color:var(--deep);font-weight:600;font-size:.8rem;line-height:1.5}
 .award-line::before{content:'✦';color:var(--accent);margin-right:.4rem;font-size:.7rem}
+
+/* 국문 페이지 소제목 — 한글 위, 영어는 아래 보조 표기 */
+.h-en{display:block;margin-top:.24rem;font-family:'DM Sans',sans-serif;font-size:.74rem;
+  font-weight:400;color:var(--muted);letter-spacing:.02em;line-height:1.45}
