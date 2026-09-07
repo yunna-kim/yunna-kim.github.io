@@ -49,6 +49,13 @@
     "category": "Academic Award"
   },
   {
+    "year": "2022",
+    "date": "2022.09.15",
+    "name": "Most Courteous Employee Award",
+    "org": "Kyung Hee University Medical Center",
+    "category": "Professional Award"
+  },
+  {
     "year": "2020",
     "date": "2020.08.19",
     "name": "Best Dissertation Award (Medical Science), Graduate School",
@@ -103,12 +110,5 @@
     "name": "Undergraduate Research Participation Program (URP), 1st Cohort",
     "org": "College of Korean Medicine, Kyung Hee University",
     "category": "Academic Activity"
-  },
-  {
-    "year": "2022",
-    "date": "2022.09.15",
-    "name": "Most Courteous Employee Award",
-    "org": "Kyung Hee University Medical Center",
-    "category": "Professional Award"
   }
 ]
