@@ -12,6 +12,30 @@
     "url": "https://www.youtube.com/watch?v=68Bi02qohN0"
   },
   {
+    "type": "YouTube",
+    "date": "2025.01.23",
+    "title": "Acupressure for Urgent Bathroom Needs (Kyung Hee Medical Center Shorts)",
+    "url": "https://youtu.be/FdmQ5vU9wCU"
+  },
+  {
+    "type": "YouTube",
+    "date": "2025.01.23",
+    "title": "Acupressure for Indigestion (Kyung Hee Medical Center Shorts)",
+    "url": "https://youtu.be/AB3MVhI8TiE"
+  },
+  {
+    "type": "YouTube",
+    "date": "2025.01.23",
+    "title": "Acupressure for Holiday Stress (Kyung Hee Medical Center Shorts)",
+    "url": "https://youtu.be/Uct3VKHDALY"
+  },
+  {
+    "type": "YouTube",
+    "date": "2025.01.22",
+    "title": "Acupressure to Relieve Drowsiness (Kyung Hee Medical Center Shorts)",
+    "url": "https://youtu.be/Q35wUQbx6WY"
+  },
+  {
     "type": "Radio",
     "date": "2024.12.04",
     "title": "TBS eFM Morning Groove [EDU Talk] Prof. Yunna Kim Episode",
@@ -28,6 +52,12 @@
     "date": "2024.08.15",
     "title": "KBS Chungju: Chungcheong Now Live",
     "url": "https://www.youtube.com/live/jAyWg-8l7C0?feature=shared"
+  },
+  {
+    "type": "YouTube",
+    "date": "2024.04.29",
+    "title": "GOOD DOCTORS: Prof. Yunna Kim, Kyung Hee University Korean Medicine Hospital",
+    "url": "https://youtu.be/YMDwWWqKTvE"
   },
   {
     "type": "TV",
