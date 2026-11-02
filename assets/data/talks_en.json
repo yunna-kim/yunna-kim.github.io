@@ -1,5 +1,13 @@
 [
   {
+    "category": "Public lecture",
+    "date": "2026.10.29",
+    "year": "2026",
+    "event": "Seoul Senior Health Companions Refresher Training",
+    "location": "Seoul, Korea",
+    "title": "Sleep Well to Remember: Sleep Solutions for Older Adults and Caregivers"
+  },
+  {
     "category": "Academic lecture",
     "date": "2026.09.17",
     "year": "2026",
@@ -280,20 +288,20 @@
     "title": "Development of Head Meridian Activity Measuring Device"
   },
   {
-    "category": "Poster",
-    "date": "2023.09.21",
-    "year": "2023",
-    "event": "2nd World Congress of Integrative Medicine and Health (ISCMR)",
-    "location": "Rome, Italy",
-    "title": "Feasibility of the Emotional Freedom Technique for Posttraumatic Stress Disorder: A Pilot Study"
-  },
-  {
     "category": "Teaching",
     "date": "2023.09–2025.08",
     "year": "2023",
     "event": "College of Korean Medicine, Kyung Hee University",
     "location": "Seoul, Korea",
     "title": "Neuropsychiatry II (4th Year, 2nd Semester), 1.5 credits"
+  },
+  {
+    "category": "Poster",
+    "date": "2023.09.21",
+    "year": "2023",
+    "event": "2nd World Congress of Integrative Medicine and Health (ISCMR)",
+    "location": "Rome, Italy",
+    "title": "Feasibility of the Emotional Freedom Technique for Posttraumatic Stress Disorder: A Pilot Study"
   },
   {
     "category": "Poster",
@@ -344,20 +352,20 @@
     "title": "Danggui-Shaoyao-San for Dementia: Systematic Review"
   },
   {
-    "category": "Public lecture",
-    "date": "2019.09.30–2019.10.07",
-    "year": "2019",
-    "event": "Public Lecture, Nowon-gu Public Health Center",
-    "location": "Seoul, Korea",
-    "title": "Insomnia, Depression in Older Adults, and Dementia"
-  },
-  {
     "category": "Teaching",
     "date": "2019.09–2025.08",
     "year": "2019",
     "event": "College of Korean Medicine, Kyung Hee University",
     "location": "Seoul, Korea",
     "title": "Neuropsychiatry II (3rd Year, 2nd Semester), 1 credit"
+  },
+  {
+    "category": "Public lecture",
+    "date": "2019.09.30–2019.10.07",
+    "year": "2019",
+    "event": "Public Lecture, Nowon-gu Public Health Center",
+    "location": "Seoul, Korea",
+    "title": "Insomnia, Depression in Older Adults, and Dementia"
   },
   {
     "category": "Poster",

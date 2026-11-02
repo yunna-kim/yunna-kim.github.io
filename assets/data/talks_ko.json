@@ -1,5 +1,13 @@
 [
   {
+    "category": "Public lecture",
+    "date": "2026.10.29",
+    "year": "2026",
+    "event": "서울시 어르신건강동행단 보수교육",
+    "location": "서울, 대한민국",
+    "title": "잘 자야 기억이 남는다 — 어르신과 나를 위한 수면 솔루션"
+  },
+  {
     "category": "Academic lecture",
     "date": "2026.09.17",
     "year": "2026",
@@ -280,20 +288,20 @@
     "title": "Development of Head Meridian Activity Measuring Device"
   },
   {
-    "category": "Poster",
-    "date": "2023.09.21",
-    "year": "2023",
-    "event": "2nd World Congress of Integrative Medicine and Health (ISCMR)",
-    "location": "Rome, Italy",
-    "title": "Feasibility of the Emotional Freedom Technique for Posttraumatic Stress Disorder: A Pilot Study"
-  },
-  {
     "category": "Teaching",
     "date": "2023.09–2025.08",
     "year": "2023",
     "event": "경희대학교 한의과대학",
     "location": "서울, 대한민국",
     "title": "신경정신과학2(4-2), 1.5학점"
+  },
+  {
+    "category": "Poster",
+    "date": "2023.09.21",
+    "year": "2023",
+    "event": "2nd World Congress of Integrative Medicine and Health (ISCMR)",
+    "location": "Rome, Italy",
+    "title": "Feasibility of the Emotional Freedom Technique for Posttraumatic Stress Disorder: A Pilot Study"
   },
   {
     "category": "Poster",
@@ -344,20 +352,20 @@
     "title": "Danggui-Shaoyao-San for Dementia: Systematic Review"
   },
   {
-    "category": "Public lecture",
-    "date": "2019.09.30–2019.10.07",
-    "year": "2019",
-    "event": "노원구 보건소 강의",
-    "location": "서울, 대한민국",
-    "title": "불면, 노인 우울증, 치매"
-  },
-  {
     "category": "Teaching",
     "date": "2019.09–2025.08",
     "year": "2019",
     "event": "경희대학교 한의과대학",
     "location": "서울, 대한민국",
     "title": "신경정신과학2(3-2), 1학점"
+  },
+  {
+    "category": "Public lecture",
+    "date": "2019.09.30–2019.10.07",
+    "year": "2019",
+    "event": "노원구 보건소 강의",
+    "location": "서울, 대한민국",
+    "title": "불면, 노인 우울증, 치매"
   },
   {
     "category": "Poster",
