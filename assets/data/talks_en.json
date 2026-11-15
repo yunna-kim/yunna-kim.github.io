@@ -17,11 +17,21 @@
   },
   {
     "category": "Public lecture",
+    "date": "2026.10.01–2026.11.12",
+    "year": "2026",
+    "event": "Seoul 50 Plus Foundation, Northern Campus",
+    "location": "Seoul, Korea",
+    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions",
+    "url": "https://www.50plus.or.kr/education-detail.do?id=75827755&educationKind=healthy"
+  },
+  {
+    "category": "Public lecture",
     "date": "2026.09.15–2026.11.03",
     "year": "2026",
     "event": "Seoul 50 Plus Foundation, Southern Campus",
     "location": "Seoul, Korea",
-    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions"
+    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions",
+    "url": "https://www.50plus.or.kr/education-detail.do?id=75683680&educationKind=healthy"
   },
   {
     "category": "Public lecture",
@@ -29,7 +39,8 @@
     "year": "2026",
     "event": "Seoul 50 Plus Foundation, Northern Campus",
     "location": "Seoul, Korea",
-    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions"
+    "title": "Good Morning, Good Night: Pain-Free Sleep Solutions",
+    "url": "https://www.50plus.or.kr/education-detail.do?id=72585707&educationKind=healthy"
   },
   {
     "category": "Academic lecture",
@@ -59,9 +70,10 @@
     "category": "Public lecture",
     "date": "2025.11.06",
     "year": "2025",
-    "event": "Public Lecture, Seongbuk-gu Dongsan Branch Office",
+    "event": "Public Lecture, Seongbuk-gu Dongseon Public Health Branch Office",
     "location": "Seoul, Korea",
-    "title": "Brain Health for Preserving Memory"
+    "title": "Brain Health for Preserving Memory",
+    "url": "https://www.sb.go.kr/bogunso/selectBbsNttView.do?key=272&bbsNo=65&nttNo=9576126"
   },
   {
     "category": "Public lecture",
@@ -69,7 +81,8 @@
     "year": "2025",
     "event": "Seoul Citizens College",
     "location": "Seoul, Korea",
-    "title": "Good Sleep Makes a Good Life: A Sleep Health Guide for Nervous System Resilience"
+    "title": "Good Sleep Makes a Good Life: A Sleep Health Guide for Nervous System Resilience",
+    "url": "https://www.50plus.or.kr/upload/im/2025/08/5c4c1099-e6fe-4dea-b5cd-13ebbfcc074f.pdf"
   },
   {
     "category": "Poster",
@@ -93,7 +106,8 @@
     "year": "2025",
     "event": "Channel A Youth Mental Health Festa",
     "location": "Seoul, Korea",
-    "title": "Participation in a Youth Mental Health Public Event"
+    "title": "Participation in a Youth Mental Health Public Event",
+    "url": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=63424"
   },
   {
     "category": "Academic lecture",
@@ -181,7 +195,8 @@
     "year": "2024",
     "event": "Lecture at Kyung Hee High School",
     "location": "Seoul, Korea",
-    "title": "Talk Concert for Prospective Test-Takers: “Am I Preparing Well for the CSAT?”"
+    "title": "Talk Concert for Prospective Test-Takers: “Am I Preparing Well for the CSAT?”",
+    "url": "https://blog.naver.com/khmcpr/223655707008"
   },
   {
     "category": "Oral",
@@ -221,7 +236,8 @@
     "year": "2024",
     "event": "Lecture at Kyung Hee Girls’ High School",
     "location": "Seoul, Korea",
-    "title": "Talk Concert for Senior High School Students: “D-70 to the CSAT, Am I Doing Well?”"
+    "title": "Talk Concert for Senior High School Students: “D-70 to the CSAT, Am I Doing Well?”",
+    "url": "https://blog.naver.com/khmcpr/223655707008"
   },
   {
     "category": "Public lecture",
@@ -229,7 +245,8 @@
     "year": "2024",
     "event": "Lecture at Kyung Hee University Medical Center",
     "location": "Seoul, Korea",
-    "title": "Talk Concert for Test-Takers and Parents: “Is My Child Doing Okay?”"
+    "title": "Talk Concert for Test-Takers and Parents: “Is My Child Doing Okay?”",
+    "url": "https://blog.naver.com/khmcpr/223545182775"
   },
   {
     "category": "Academic lecture",
